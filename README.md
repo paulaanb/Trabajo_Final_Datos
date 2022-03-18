@@ -7,7 +7,7 @@ Los integrantes de este proyecto son:
 
 -Teresa Alvarez(@tereesaalvarez)
 
--Ana Lopez()
+-Ana Lopez(@AnaLopezP)
 
 -Andrea Manuel(@andmansim)
 
