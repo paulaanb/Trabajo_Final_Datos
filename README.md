@@ -1,7 +1,7 @@
 # Trabajo_Final_Datos
-
+# Link del dataset
 El link del data set es el siguiente: https://www.kaggle.com/antoniotello/eilu-descriptive-analysis-and-visualization/notebook
-
+# Sobre el proyecto
 Los datos a analizar corresponden al año 2019 y la titulación de Grado y Master.
 
 En este trabajo trato de cuantificar cuanto aumenta la probabilidad de estar empleado tras haber asistido a una universidad privada.
