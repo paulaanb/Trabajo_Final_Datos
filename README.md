@@ -1,10 +1,16 @@
 # Trabajo Final Datos
 Los integrantes de este proyecto son:
+
 -Paula Naranjo (@paulaanb)
+
 -Miguel Angel Guerra ()
--Teresa Alvarez()
+
+-Teresa Alvarez(@tereesaalvarez)
+
 -Ana Lopez()
+
 -Andrea Manuel()
+
 # Link del dataset
 El link del data set es el siguiente: https://www.kaggle.com/antoniotello/eilu-descriptive-analysis-and-visualization/notebook
 # Sobre el proyecto
