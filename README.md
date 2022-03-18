@@ -9,7 +9,7 @@ Los integrantes de este proyecto son:
 
 -Ana Lopez()
 
--Andrea Manuel()
+-Andrea Manuel(@andmansim)
 
 # Link del dataset
 El link del data set es el siguiente: https://www.kaggle.com/antoniotello/eilu-descriptive-analysis-and-visualization/notebook
