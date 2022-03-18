@@ -3,7 +3,7 @@ Los integrantes de este proyecto son:
 
 -Paula Naranjo (@paulaanb)
 
--Miguel Angel Guerra ()
+-Miguel Angel Guerra (@guerramorantemiguel)
 
 -Teresa Alvarez(@tereesaalvarez)
 
