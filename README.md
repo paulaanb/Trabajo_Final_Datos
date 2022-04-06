@@ -23,4 +23,4 @@ Como se puede ver en el gráfico más arriba, es mayor el porcentaje de empleado
 
 # ¿Por qué nos hemos decantado por este proyecto?
 
-Hemos elegido este proyecto para orientar y ayudar a las siguientes generaciones, al igual que a la nuestra, sobre que futuro elegir. Además, gracias a este trabajo hemos podido aprender las ventajas de cada modalidad y sus oportinidades, lo cual, creemos que será algo muy veneficioso para todos. 
+Hemos elegido este proyecto para orientar y ayudar a las siguientes generaciones, al igual que a la nuestra, sobre que futuro elegir. Además, gracias a este trabajo hemos podido aprender las ventajas de cada modalidad y sus oportinidades, lo cual, creemos que será algo muy beneficioso para todos. 
