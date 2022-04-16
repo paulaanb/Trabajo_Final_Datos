@@ -1,5 +1,5 @@
 import pandas as pd
-#import matplotlib as plt
+import matplotlib as plt
 import numpy as np
 
 #leer con pandas
@@ -47,14 +47,14 @@ print(df1.head(1))
 '''
 La librería matplotlib no se nos instala, por eso no podemos comprobarlo. Hemos conseguido hacer hasta aquí.
 '''
-'''fig = plt.figure() #creamos la  figura, es donde se construyen todos los gráficos 
+fig = plt.figure() #creamos la  figura, es donde se construyen todos los gráficos 
 ax = fig.add_subplot(1, 1, 1) # marco
 ax.set_title('Título del gráfico')
 ax.set_xlabel('Etiqueta para el eje X')
 ax.set_ylabel('Etiqueta para el eje Y')
 ax.xaxis.grid(True) #Poner rejillas eje x
 ax.yaxis.grid(True) #Poner rejillas eje y
-'''
+
 
 #agrupación
 print('------------AGRUPACIÓN---------------')
