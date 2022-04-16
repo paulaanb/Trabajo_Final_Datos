@@ -51,3 +51,8 @@ ax.set_xlabel('Etiqueta para el eje X')
 ax.set_ylabel('Etiqueta para el eje Y')
 ax.xaxis.grid(True) #Poner rejillas eje x
 ax.yaxis.grid(True) #Poner rejillas eje y
+
+
+
+
+
