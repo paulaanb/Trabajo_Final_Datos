@@ -6,3 +6,9 @@ print(df)
 #escribir con pandas
 prueba = pd.DataFrame(['Hola'], columns=['Prueba'])
 prueba.to_csv('prueba.csv')
+
+#Indexación
+#filas
+print (df.iloc[0])
+#columnas
+print(df['EDAD'])
