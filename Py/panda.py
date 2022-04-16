@@ -71,4 +71,5 @@ print(df)
 
 #tipo de datos
 print('------------TIPO-DE-DATOS------------')
-print(df.info())
+print(df.dtypes)
+
