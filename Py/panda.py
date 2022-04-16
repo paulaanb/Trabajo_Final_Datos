@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 #leer con pandas
-df = pd.read_csv('EILU_MAST_2019.csv', delimiter="\t", encoding='UTF-8')
+df = pd.read_csv('C:\Tmp\EILU_MAST_2019.csv', delimiter="\t", encoding='UTF-8')
 print('---------------LEER---------------------')
 print(df)
 
@@ -65,7 +65,6 @@ print('-----------CLASIFICACIÓN-----------------')
 print(df.rank()) #rank(), nos devuelve la clasificación de cada valor a lo largo de un eje determinado
 
 #valores perdidos
-
-
-print(df['NACIO1'])
-print(df.size-df.isnull().sum().sum())
+a = {'NaN': '0'}
+df.fillna('0')
+print(df)
