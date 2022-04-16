@@ -65,6 +65,7 @@ print('-----------CLASIFICACIÓN-----------------')
 print(df.rank()) #rank(), nos devuelve la clasificación de cada valor a lo largo de un eje determinado
 
 #valores perdidos
-a = {'NaN': '0'}
-df.fillna('0')
+print('----------VALORES-PERDIDOS--------------')
+df.fillna('0', inplace=True)
 print(df)
+
