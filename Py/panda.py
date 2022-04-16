@@ -69,3 +69,6 @@ print('----------VALORES-PERDIDOS--------------')
 df.fillna('0', inplace=True)
 print(df)
 
+#tipo de datos
+print('------------TIPO-DE-DATOS------------')
+print(df.info())
