@@ -24,3 +24,11 @@ print(df['EDAD']== 1)
 print("---------------------------RESUMEN DE FUNCIONES----------------------")
 df.count() #devuelve el numero de elementos que no son nulos
 df.sum() #devuelve la suma de los datos (si son numeros) o su concadenacion (si es string)
+#asiganción
+
+print('--------------ASIGNACIÓN---------------')
+df1 = df.copy()#copia del DataFrame, para no modificarlo
+print(df1.equals(df)) #comprobamos que son iguales
+print(df1.head(1))
+df1.loc[0, 'EDAD'] = 3
+print(df1.head(1))
