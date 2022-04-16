@@ -12,3 +12,6 @@ prueba.to_csv('prueba.csv')
 print (df.iloc[0])
 #columnas
 print(df['EDAD'])
+
+#seleccion
+print(df['EDAD']== 1)
