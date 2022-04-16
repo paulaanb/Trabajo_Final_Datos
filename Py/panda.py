@@ -19,3 +19,8 @@ print(df['EDAD'])
 #seleccion
 print('------------SELECCIÓN--------------------')
 print(df['EDAD']== 1)
+
+#resumen de funciones
+print("---------------------------RESUMEN DE FUNCIONES----------------------")
+df.count() #devuelve el numero de elementos que no son nulos
+df.sum() #devuelve la suma de los datos (si son numeros) o su concadenacion (si es string)
