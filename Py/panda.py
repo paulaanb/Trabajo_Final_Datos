@@ -4,4 +4,5 @@ df = pd.read_csv('EILU_MAST_2019.csv', delimiter="\t", encoding='UTF-8')
 print(df)
 
 #escribir con pandas
-df.to_csv('Perro')
+prueba = pd.DataFrame(['Hola'], columns=['Prueba'])
+prueba.to_csv('prueba.csv')
