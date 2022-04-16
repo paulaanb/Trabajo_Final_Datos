@@ -22,10 +22,16 @@ print(df['EDAD']== 1)
 
 #resumen de funciones
 print("---------------------------RESUMEN DE FUNCIONES----------------------")
-df.count() #devuelve el numero de elementos que no son nulos
-df.sum() #devuelve la suma de los datos (si son numeros) o su concadenacion (si es string)
-#asiganción
+df['EDAD'].count() #devuelve el numero de elementos que no son nulos en la columna 'EDAD'
+df['EDAD'].sum() #devuelve la suma de los datos (si son numeros) o su concadenacion (si es string) en la columna 'EDAD'
+df['EDAD'].cumsum() #devuelve una serie con la suma acumulada de los datos de la columna 'EDAD'
+df['EDAD'].value_counts() #devuelve una serie con la frecuencia de aparecion de cada valor en la columna 'EDAD'
+df['EDAD'].min() #devulve el valor minimo en la columna 'EDAD'
+df['EDAD'].max() #devuelve el valor maximo en la columna 'EDAD'
+df['EDAD'].mean() #devuelve la media de los datos (numericos) en la columna
 
+
+#asiganción
 print('--------------ASIGNACIÓN---------------')
 df1 = df.copy()#copia del DataFrame, para no modificarlo
 print(df1.equals(df)) #comprobamos que son iguales
