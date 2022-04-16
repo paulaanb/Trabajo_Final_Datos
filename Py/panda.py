@@ -44,6 +44,9 @@ df1.loc[0, 'EDAD'] = 3
 print(df1.head(1))
 
 #matplotlib
+'''
+La librería matplotlib no se nos instala, por eso no podemos comprobarlo. Hemos conseguido hacer hasta aquí.
+'''
 fig = plt.figure() #creamos la  figura, es donde se construyen todos los gráficos 
 ax = fig.add_subplot(1, 1, 1) # marco
 ax.set_title('Título del gráfico')
