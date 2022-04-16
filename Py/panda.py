@@ -60,5 +60,9 @@ ax.yaxis.grid(True) #Poner rejillas eje y
 print('------------AGRUPACIÓN---------------')
 print(df.groupby('PAIS_NACI')['EDAD'].sum())
 
+#clasificación
+print('-----------CLASIFICACIÓN-----------------')
+print(df.rank()) #rank(), nos devuelve la clasificación de cada valor a lo largo de un eje determinado
+
 
 
