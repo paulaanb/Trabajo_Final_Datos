@@ -64,5 +64,8 @@ print(df.groupby('PAIS_NACI')['EDAD'].sum())
 print('-----------CLASIFICACIÓN-----------------')
 print(df.rank()) #rank(), nos devuelve la clasificación de cada valor a lo largo de un eje determinado
 
+#valores perdidos
 
 
+print(df['NACIO1'])
+print(df.size-df.isnull().sum().sum())
