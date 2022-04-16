@@ -29,6 +29,8 @@ df['EDAD'].value_counts() #devuelve una serie con la frecuencia de aparecion de 
 df['EDAD'].min() #devulve el valor minimo en la columna 'EDAD'
 df['EDAD'].max() #devuelve el valor maximo en la columna 'EDAD'
 df['EDAD'].mean() #devuelve la media de los datos (numericos) en la columna
+df['EDAD'].std() #devuelve la desviacion tipica de los datos numericos
+df['EDAD'].describe() #devuelve una serie con un resumen de algunos de los datos anteriores, como la media, la desviacion tipica...
 
 
 #asiganción
