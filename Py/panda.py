@@ -53,6 +53,20 @@ ax.xaxis.grid(True) #Poner rejillas eje x
 ax.yaxis.grid(True) #Poner rejillas eje y
 
 
+#agrupación
+print('------------AGRUPACIÓN---------------')
+print(df.groupby('PAIS_NACI')['EDAD'].sum())
 
+#clasificación
+print('-----------CLASIFICACIÓN-----------------')
+print(df.rank()) #rank(), nos devuelve la clasificación de cada valor a lo largo de un eje determinado
 
+#valores perdidos
+print('----------VALORES-PERDIDOS--------------')
+df.fillna('0', inplace=True)
+print(df)
+
+#tipo de datos
+print('------------TIPO-DE-DATOS------------')
+print(df.dtypes)
 
