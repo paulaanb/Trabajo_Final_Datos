@@ -50,13 +50,19 @@ df.fillna('0', inplace=True)
 print(df)
 
 #matplotlib
-def g_barras(x, y):
+print("--------------------GRAFICAS-------------------------")
+def g_barras(lista, x):
     plt.subplots()
-    plt.bar(df[x], df[y])
-    plt.xlabel(x)
-    plt.ylabel(y)
+    ejey = df[x].value_counts()
+    ejex = lista
+    plt.bar(ejex, ejey)
     plt.show()
-g_barras('LUG_RES_PAIS', 'SEXO')
+    #con esta funcion hacemos graficas de barras sencillas para clasificar a los universitarios estudiados
+
+g_barras()
+
+   
+
 
 
 #agrupación
