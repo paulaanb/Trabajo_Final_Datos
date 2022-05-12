@@ -4,6 +4,7 @@ import numpy as np
 
 #leer con pandas
 df = pd.read_csv('EILU_MAST_2019.csv', delimiter="\t", encoding='UTF-8')
+df2 = pd.read_csv('EILU_GRAD_2019-1.csv', delimiter="\t", encoding='UTF-8')
 print('---------------LEER---------------------')
 print(df)
 
@@ -50,14 +51,21 @@ df.fillna('0', inplace=True)
 print(df)
 
 #matplotlib
-def g_barras(x, y):
+def g_barras(x, y, b):
+    if b == 'master':
+        x1 = df[x]
+        x2 = df[y]
+    elif b == 'grado':
+        x1 = df2[x]
+        y1 = df2[y]
     plt.subplots()
-    plt.bar(df[x], df[y])
+    plt.bar(x1, y1)
+    plt.title('Diagrama de barras del ' + b)
     plt.xlabel(x)
     plt.ylabel(y)
     plt.show()
-g_barras('LUG_RES_PAIS', 'SEXO')
-g_barras('T_UNIV', 'PROXY')
+g_barras('LUG_RES_PAIS', 'SEXO', 'master')
+g_barras('T_UNIV', 'NACIO', 'grado')
 #agrupación
 print('------------AGRUPACIÓN---------------')
 print(df.groupby('PAIS_NACI')['EDAD'].sum())
