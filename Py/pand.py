@@ -69,6 +69,22 @@ edades = [1, 2, 3]
 #3: mayores de 35
 g_barras(edades, 'EDAD')
 
+nacionalidades = [1, 2, 3]
+'''
+1: Española
+2: española y otra
+3: otra'''
+g_barras(nacionalidades, 'NACIO')
+
+ramas = [1, 2, 3, 4, 5]
+'''
+1: artes y humanidades
+2: ciencias
+3: ciencias sociales y juridicas
+4: ingenieria y arquitectura
+5: ciencias de la salud'''
+g_barras(ramas, "RAMA")
+
 
 
 #agrupación
