@@ -59,9 +59,15 @@ def g_barras(lista, x):
     plt.show()
     #con esta funcion hacemos graficas de barras sencillas para clasificar a los universitarios estudiados
 
-g_barras()
+sexos = [2, 1]
+# 2 son mujeres y 1 son hombres, segun el excel del creador
+g_barras(sexos, 'SEXO')
 
-   
+edades = [1, 2, 3] 
+#1: menores de 30
+#2: entre 30 y 35
+#3: mayores de 35
+g_barras(edades, 'EDAD')
 
 
 
