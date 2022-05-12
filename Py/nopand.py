@@ -56,12 +56,13 @@ def grupo(col):
        
     total = Counter(grupos) 
     return total
+print('\n')
 genero = grupo('SEXO')
 genero['Mujer'] = genero['2']
 del(genero['2'])
 genero['Hombre'] = genero['1']
 del (genero['1'])
-print('En nuestros dados tenemos: ' + str(genero))
+print('En nuestros dados tenemos: ' + '\n' + str(genero))
 edad = grupo('EDAD')
 edad['Menores de 30 años'] = edad['1']
 edad['De 30 a 35 años'] = edad['2']
