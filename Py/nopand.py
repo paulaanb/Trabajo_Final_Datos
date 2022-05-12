@@ -17,5 +17,11 @@ with open('EILU_MAST_2019.csv', encoding='UTF-8') as f:
 '''for x in range(len(fichero)):
     print(fichero[x])
     print('\n')'''
+#Columnas del fichero
+
+datos = fichero[0].keys()
+print('Las columnas de nuestro fichero son en total: ' + str(len(datos)))
+print('Columnas:')
+print(datos)
 
         
