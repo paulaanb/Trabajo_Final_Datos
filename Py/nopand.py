@@ -78,5 +78,15 @@ def añadirdatos(genero):
         a['Media de hombres'] = round((valor_genero[1]) / (len(fichero2)) * 100, 2)
     print('\n')
     print('Hemos añadido la siguiente columna "Media de hombres": '+ str(a['Media de hombres']))
- 
+    print(fichero2[0])
 añadirdatos(edad)
+
+#Eliminar columnas
+def borrardatos():
+    for a in fichero2:
+        del (a['Media de hombres'])
+    print('\n')
+    print('Hemos eliminado la columna que hemos añadido antes')
+    print(fichero2[0])
+
+borrardatos()
