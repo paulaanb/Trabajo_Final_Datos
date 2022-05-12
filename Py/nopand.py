@@ -37,5 +37,11 @@ def borrar(fichero):
                 a[key] = 0
 
 borrar(fichero)
-print(fichero[4])
+
+#Tipos de datos en nuestro fichero
+fichero1 = fichero[0]
+print('\n')
+print('Información sobre los datos')
+for key, values in fichero1.items():
+    print(str(key) + '\t' + str(type(values)))
         
