@@ -48,13 +48,14 @@ print(df1.head(1))
 #valores perdidos
 print('----------VALORES-PERDIDOS--------------')
 df.fillna('0', inplace=True)
+df2.fillna('0', inplace=True)
 print(df)
 
 #matplotlib
 def g_barras(x, y, b):
     if b == 'master':
         x1 = df[x]
-        x2 = df[y]
+        y1 = df[y]
     elif b == 'grado':
         x1 = df2[x]
         y1 = df2[y]
