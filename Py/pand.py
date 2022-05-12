@@ -44,14 +44,19 @@ df1.loc[0, 'EDAD'] = 3
 print(df1.head(1))
 
 
-fig = plt.figure() #creamos la  figura, es donde se construyen todos los gráficos 
-ax = fig.add_subplot(1, 1, 1) # marco
-ax.set_title('Título del gráfico')
-ax.set_xlabel('Etiqueta para el eje X')
-ax.set_ylabel('Etiqueta para el eje Y')
-ax.xaxis.grid(True) #Poner rejillas eje x
-ax.yaxis.grid(True) #Poner rejillas eje y
+#valores perdidos
+print('----------VALORES-PERDIDOS--------------')
+df.fillna('0', inplace=True)
+print(df)
 
+#matplotlib
+def graficas(x, y):
+    plt.subplots()
+    plt.bar(df[x], df[y])
+    plt.xlabel(x)
+    plt.ylabel(y)
+    plt.show()
+graficas('LUG_RES_PAIS', 'SEXO')
 
 #agrupación
 print('------------AGRUPACIÓN---------------')
@@ -61,10 +66,6 @@ print(df.groupby('PAIS_NACI')['EDAD'].sum())
 print('-----------CLASIFICACIÓN-----------------')
 print(df.rank()) #rank(), nos devuelve la clasificación de cada valor a lo largo de un eje determinado
 
-#valores perdidos
-print('----------VALORES-PERDIDOS--------------')
-df.fillna('0', inplace=True)
-print(df)
 
 #tipo de datos
 print('------------TIPO-DE-DATOS------------')
