@@ -13,6 +13,9 @@ with open('EILU_MAST_2019.csv', encoding='UTF-8') as f:
     leer = csv.DictReader(f, delimiter = '\t')
     for i in leer:
         fichero.append(i)
-for x in range(len(fichero)):
+# Bucle para leer el fichero de una manera más ordenada
+'''for x in range(len(fichero)):
     print(fichero[x])
-    print('\n')
+    print('\n')'''
+
+        
