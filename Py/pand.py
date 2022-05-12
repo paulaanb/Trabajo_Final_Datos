@@ -59,33 +59,29 @@ def g_barras(lista, x):
     plt.show()
     #con esta funcion hacemos graficas de barras sencillas para clasificar a los universitarios estudiados
 
-sexos = [2, 1]
-# 2 son mujeres y 1 son hombres, segun el excel del creador
+sexos = ["MUJERES", "HOMBRES"]
+print(df["SEXO"].value_counts())
 g_barras(sexos, 'SEXO')
 
-edades = [1, 2, 3] 
-#1: menores de 30
-#2: entre 30 y 35
-#3: mayores de 35
+edades = ["ENTRE 30 Y 35", "MAYORES DE 35", "MENORES DE 30"]
+print(df["EDAD"].value_counts())
 g_barras(edades, 'EDAD')
 
-nacionalidades = [1, 3, 2]
+nacionalidades = ["ESPAÑOLA", "OTRA", "ESPAÑOLA Y OTRA"]
 print(df["NACIO"].value_counts())
-'''
-1: Española
-2: española y otra
-3: otra'''
 g_barras(nacionalidades, 'NACIO')
 
-ramas = [3, 4, 5, 1, 2]
+ramas = ["C.SOCIAL/JURID.", "ING/ARQ", "C. SALUD", "ART/HUMAN", "CIENCIAS"]
 print(df["RAMA"].value_counts())
-'''
-1: artes y humanidades
-2: ciencias
-3: ciencias sociales y juridicas
-4: ingenieria y arquitectura
-5: ciencias de la salud'''
 g_barras(ramas, "RAMA")
+
+tipo_uni = ["PUB. PRES", "PRIV. PRES", "PRIV. DIST", "PUB. DIST."]
+print(df["T_UNIV"].value_counts())
+g_barras(tipo_uni, "T_UNIV")
+
+estudio_extrangero = ["NO EST EXTRANGERO", "SI EST EXTRANGERO", "NS/NC"]
+print(df["EST_B1"].value_counts())
+g_barras(estudio_extrangero, "EST_B1")
 
 
 
