@@ -17,6 +17,7 @@ with open('EILU_MAST_2019.csv', encoding='UTF-8') as f:
 '''for x in range(len(fichero)):
     print(fichero[x])
     print('\n')'''
+    
 #Columnas del fichero
 datos = fichero[0].keys()
 print('Las columnas de nuestro fichero son en total: ' + str(len(datos)))
@@ -28,4 +29,13 @@ print('\n')
 n = len(fichero)
 print('Tenemos ' + str(n) + ' datos para analizar')
 
+#Eliminar espacio en blanco
+def borrar(fichero):
+    for a in fichero:
+        for key, value in a.items():
+            if value == '':
+                a[key] = 0
+
+borrar(fichero)
+print(fichero[4])
         
