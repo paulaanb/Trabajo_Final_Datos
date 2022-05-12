@@ -69,14 +69,16 @@ edades = [1, 2, 3]
 #3: mayores de 35
 g_barras(edades, 'EDAD')
 
-nacionalidades = [1, 2, 3]
+nacionalidades = [1, 3, 2]
+print(df["NACIO"].value_counts())
 '''
 1: Española
 2: española y otra
 3: otra'''
 g_barras(nacionalidades, 'NACIO')
 
-ramas = [1, 2, 3, 4, 5]
+ramas = [3, 4, 5, 1, 2]
+print(df["RAMA"].value_counts())
 '''
 1: artes y humanidades
 2: ciencias
