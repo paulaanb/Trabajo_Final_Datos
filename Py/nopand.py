@@ -1,4 +1,6 @@
 import csv
+from collections import Counter
+from nntplib import GroupInfo
 '''
 Cómo funcionan los modelos(El primer paso si eres nuevo en el aprendizaje automático)
 Exploración básica de datos(Cargue y comprenda sus datos)
@@ -44,4 +46,14 @@ print('\n')
 print('Información sobre los datos')
 for key, values in fichero1.items():
     print(str(key) + '\t' + str(type(values)))
-        
+
+#Agrupaciones
+def grupo(col):
+    GroupInfo = []
+    for a in fichero:
+        g = a[col]
+        grupo.append(g)
+       
+    total = Counter(grupo) 
+    return total
+genero = grupo('SEXO')
