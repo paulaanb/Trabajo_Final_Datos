@@ -69,3 +69,24 @@ edad['De 30 a 35 años'] = edad['2']
 edad['Mayores de 35 años'] = edad['3']
 del(edad['1'], edad['2'], edad['3'])
 print(edad)
+
+#Añadir columnas
+fichero2 = fichero
+def añadirdatos(genero):
+    valor_genero = list(genero.values())
+    for a in fichero2:
+        a['Media de hombres'] = round((valor_genero[1]) / (len(fichero2)) * 100, 2)
+    print('\n')
+    print('Hemos añadido la siguiente columna "Media de hombres": '+ str(a['Media de hombres']))
+    print(fichero2[0])
+añadirdatos(edad)
+
+#Eliminar columnas
+def borrardatos():
+    for a in fichero2:
+        del (a['Media de hombres'])
+    print('\n')
+    print('Hemos eliminado la columna que hemos añadido antes')
+    print(fichero2[0])
+
+borrardatos()
