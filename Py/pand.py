@@ -59,7 +59,8 @@ def g_barras(lista, x):
     plt.show()
     #con esta funcion hacemos graficas de barras sencillas para clasificar a los universitarios estudiados
 
-g_barras()
+sexos = [2, 1]
+g_barras(sexos, 'SEXO')
 
    
 
