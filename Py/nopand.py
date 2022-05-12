@@ -49,11 +49,16 @@ for key, values in fichero1.items():
 
 #Agrupaciones
 def grupo(col):
-    GroupInfo = []
+    grupos = []
     for a in fichero:
         g = a[col]
-        grupo.append(g)
+        grupos.append(g)
        
-    total = Counter(grupo) 
+    total = Counter(grupos) 
     return total
 genero = grupo('SEXO')
+genero['Mujer'] = genero['2']
+del(genero['2'])
+genero['Hombre'] = genero['1']
+del (genero['1'])
+print('En nuestros dados tenemos: ' + str(genero))
