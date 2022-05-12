@@ -57,14 +57,7 @@ def g_barras(x, y):
     plt.ylabel(y)
     plt.show()
 g_barras('LUG_RES_PAIS', 'SEXO')
-
-def g_dispersion(x, y):
-    plt.subplots()
-    plt.scatter(x, y)
-    plt.xlabel(x)
-    plt.ylabel(y)
-    plt.show()
-g_dispersion('EDAD', 'SEXO')
+g_barras('T_UNIV', 'PROXY')
 #agrupación
 print('------------AGRUPACIÓN---------------')
 print(df.groupby('PAIS_NACI')['EDAD'].sum())
