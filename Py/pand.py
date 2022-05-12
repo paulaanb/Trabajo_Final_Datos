@@ -84,7 +84,6 @@ print(df["EST_B1"].value_counts())
 g_barras(estudio_extrangero, "EST_B1")
 
 
-
 #agrupación
 print('------------AGRUPACIÓN---------------')
 print(df.groupby('PAIS_NACI')['EDAD'].sum())
