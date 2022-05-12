@@ -62,3 +62,9 @@ del(genero['2'])
 genero['Hombre'] = genero['1']
 del (genero['1'])
 print('En nuestros dados tenemos: ' + str(genero))
+edad = grupo('EDAD')
+edad['Menores de 30 años'] = edad['1']
+edad['De 30 a 35 años'] = edad['2']
+edad['Mayores de 35 años'] = edad['3']
+del(edad['1'], edad['2'], edad['3'])
+print(edad)
