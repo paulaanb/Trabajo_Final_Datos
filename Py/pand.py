@@ -4,7 +4,6 @@ import numpy as np
 
 #leer con pandas
 df = pd.read_csv('EILU_MAST_2019.csv', delimiter="\t", encoding='UTF-8')
-df2 = pd.read_csv('EILU_GRAD_2019-1.csv', delimiter="\t", encoding='UTF-8')
 print('---------------LEER---------------------')
 print(df)
 
@@ -48,25 +47,18 @@ print(df1.head(1))
 #valores perdidos
 print('----------VALORES-PERDIDOS--------------')
 df.fillna('0', inplace=True)
-df2.fillna('0', inplace=True)
 print(df)
 
 #matplotlib
-def g_barras(x, y, b):
-    if b == 'master':
-        x1 = df[x]
-        y1 = df[y]
-    elif b == 'grado':
-        x1 = df2[x]
-        y1 = df2[y]
+def g_barras(x, y):
     plt.subplots()
-    plt.bar(x1, y1)
-    plt.title('Diagrama de barras del ' + b)
+    plt.bar(df[x], df[y])
     plt.xlabel(x)
     plt.ylabel(y)
     plt.show()
-g_barras('LUG_RES_PAIS', 'SEXO', 'master')
-g_barras('T_UNIV', 'NACIO', 'grado')
+g_barras('LUG_RES_PAIS', 'SEXO')
+
+
 #agrupación
 print('------------AGRUPACIÓN---------------')
 print(df.groupby('PAIS_NACI')['EDAD'].sum())
