@@ -16,6 +16,10 @@ https://github.com/paulaanb/Trabajo_Final_Datos.git
 
 # Link del dataset
 El link del data set es el siguiente: https://www.kaggle.com/antoniotello/eilu-descriptive-analysis-and-visualization/notebook
+
+# Link de la página web
+El link del data set es el siguiente: https://proyecto.paulaanb.repl.co/
+
 # Sobre el proyecto
 Los datos a analizar corresponden al año 2019 y la titulación de Grado y Master.
 
