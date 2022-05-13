@@ -48,7 +48,7 @@ print(df1.head(1))
 print('----------VALORES-PERDIDOS--------------')
 df.fillna('0', inplace=True)
 print(df)
-
+df3 = df.to_csv('EILU_MAST1_2019.csv')
 #matplotlib
 print("--------------------GRAFICAS-------------------------")
 def g_barras(lista, x):
